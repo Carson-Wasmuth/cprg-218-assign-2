@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark brown */
-    color: #fff;
+    background-color: #121212; /* Dark gray */
+    color: #ddd; /* Light gray text color */
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #8b4513; /* Saddle brown */
+    background-color: #333; /* Darker gray */
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -25,16 +25,18 @@ header {
 section {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #2f2f2f; /* Darker brown */
+    background-color: #1e1e1e; /* Darker gray */
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
 
 /* Card styles */
 .card {
-    background-color: #3a3a3a; /* Even darker brown */
+    background-color: #333; /* Darker gray */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 /* Embedded video styles */
@@ -46,13 +48,13 @@ iframe {
 
 /* Accordion styles */
 .accordion {
-    background-color: #3a3a3a; /* Even darker brown */
+    background-color: #333; /* Darker gray */
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
 .accordion-item {
-    border-bottom: 1px solid #2f2f2f; /* Darker brown */
+    border-bottom: 1px solid #2f2f2f; /* Darker gray */
 }
 
 .accordion-item:last-child {
@@ -60,7 +62,7 @@ iframe {
 }
 
 .accordion-title {
-    background-color: #8b4513; /* Saddle brown */
+    background-color: #555; /* Gray */
     padding: 15px;
     cursor: pointer;
     border-radius: 8px;
@@ -73,7 +75,7 @@ iframe {
 
 /* Footer styles */
 footer {
-    background-color: #2f2f2f; /* Darker brown */
+    background-color: #333; /* Darker gray */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -84,10 +86,11 @@ footer {
 a {
     color: #ff6600; /* Orange */
     text-decoration: none;
+    transition: color 0.3s ease; /* Add transition effect */
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #ffa500; /* Change color on hover */
 }
 
 /* Heading styles */
@@ -98,4 +101,5 @@ h1, h2, h3 {
 /* Text styles */
 p {
     line-height: 1.6;
+    opacity: 0.9; /* Reduce opacity for text */
 }

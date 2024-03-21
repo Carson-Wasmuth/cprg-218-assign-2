@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrakis Travel Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<header>
+    <h1>Arrakis Travel Guide</h1>
+</header>
+
 <div class="container">
 
     <section>
@@ -36,13 +42,13 @@
         <h2>Useful Information</h2>
         <div class="accordion">
             <div class="accordion-item">
-                <div class="accordion-title">Climate</div>
+                <div class="accordion-title"><i class="fas fa-caret-down"></i> Climate</div>
                 <div class="accordion-content">
                     <p>Arrakis has a harsh desert climate with extreme temperatures and frequent sandstorms.</p>
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-title">Transportation</div>
+                <div class="accordion-title"><i class="fas fa-caret-down"></i> Transportation</div>
                 <div class="accordion-content">
                     <p>Travel on Arrakis is primarily by sandworm or ornithopter.</p>
                 </div>
@@ -55,6 +61,33 @@
 <footer>
     <p>&copy; 2024 Arrakis Travel Guide. All rights reserved.</p>
 </footer>
+
+<!-- Font Awesome Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-B0A4WzZ2C5qqz0dYhmwFqZK1AkjStFpzIdNbsJepmdB2H/DbPFDWq2jw+0v6A/Yk" crossorigin="anonymous"></script>
+
+<!-- JavaScript for Accordion -->
+<script>
+    // Get all accordion items
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    // Add event listener to each accordion title
+    accordionItems.forEach(item => {
+        const title = item.querySelector('.accordion-title');
+        const content = item.querySelector('.accordion-content');
+
+        title.addEventListener('click', () => {
+            // Toggle the 'active' class on the clicked item
+            item.classList.toggle('active');
+            
+            // Toggle the visibility of the accordion content
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
