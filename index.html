@@ -69,8 +69,13 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Arrakis Travel Guide. All rights reserved.</p>
+    <p>&copy; <span id="currentYear"></span> Arrakis Planetary Travel Agency. All rights reserved.</p>
 </footer>
+
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-B0A4WzZ2C5qqz0dYhmwFqZK1AkjStFpzIdNbsJepmdB2H/DbPFDWq2jw+0v6A/Yk" crossorigin="anonymous"></script>

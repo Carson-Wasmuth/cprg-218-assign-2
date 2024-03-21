@@ -15,7 +15,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #332D29;
+    background: linear-gradient(to bottom, rgba(51,45,41,1) 0%, rgba(51,45,41,1) 50%, rgba(51,45,41,0.5) 100%), url('assets/dune.jpg') no-repeat center center/cover; /* Gradient background with hero image */
     color: #F1E5C4;
     padding: 50px 0;
     text-align: center;
