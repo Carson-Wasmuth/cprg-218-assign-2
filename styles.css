@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #080808; /* Dark background inspired by Dune's desert landscape */
-    color: #D4CFC9; /* Light gray text color */
+    background-color: #080808;
+    color: #D4CFC9;
 }
 
 .container {
@@ -15,28 +15,29 @@ body {
 
 /* Header styles */
 header {
-    background-color: #332D29; /* Dark brown inspired by the color of Arrakis' sand */
-    color: #F1E5C4; /* Light brown for contrast */
+    background-color: #332D29;
+    color: #F1E5C4;
     padding: 50px 0;
     text-align: center;
+    border-bottom: 12px solid #6F5842; 
 }
 
 /* Section styles */
 section {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #1C1915; /* Dark brown for sections */
+    background-color: #1C1915;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Card styles */
 .card {
-    background-color: #2B2723; /* Slightly lighter brown for cards */
+    background-color: #2B2723;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Embedded video styles */
@@ -48,13 +49,13 @@ iframe {
 
 /* Accordion styles */
 .accordion {
-    background-color: #2B2723; /* Dark brown for accordion background */
+    background-color: #2B2723;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
 .accordion-item {
-    border-bottom: 1px solid #1C1915; /* Darker brown for accordion item borders */
+    border-bottom: 1px solid #1C1915;
 }
 
 .accordion-item:last-child {
@@ -62,7 +63,7 @@ iframe {
 }
 
 .accordion-title {
-    background-color: #332D29; /* Dark brown for accordion titles */
+    background-color: #332D29;
     padding: 15px;
     cursor: pointer;
     border-radius: 8px;
@@ -75,8 +76,8 @@ iframe {
 
 /* Footer styles */
 footer {
-    background-color: #332D29; /* Dark brown for footer */
-    color: #F1E5C4; /* Light brown for footer text */
+    background-color: #332D29;
+    color: #F1E5C4;
     text-align: center;
     padding: 20px 0;
     border-radius: 8px;
@@ -84,22 +85,24 @@ footer {
 
 /* Links styles */
 a {
-    color: #FFA500; /* Orange for links */
+    color: #FFA500;
     text-decoration: none;
-    transition: color 0.3s ease; /* Add transition effect */
+    transition: color 0.3s ease;
+    font-weight: bold; 
 }
 
 a:hover {
-    color: #FFD700; /* Lighter orange on hover */
+    color: #FFD700;
 }
 
 /* Heading styles */
 h1, h2, h3 {
-    color: #FFA500; /* Orange for headings */
+    color: #FFA500;
+    font-weight: bold; 
 }
 
 /* Text styles */
 p {
     line-height: 1.6;
-    opacity: 0.9; /* Reduce opacity for text */
+    opacity: 0.9;
 }
