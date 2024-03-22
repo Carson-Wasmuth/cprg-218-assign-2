@@ -188,3 +188,25 @@ p {
         border-radius: 8px;
     }
 }
+
+section {
+    padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+}
