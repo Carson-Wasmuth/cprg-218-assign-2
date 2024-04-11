@@ -52,14 +52,14 @@
         <h2>Important Information</h2>
         <div class="accordion">
             <div class="accordion-item">
-                <div class="accordion-title"><i class="material-icons">expand_more</i> Climate</div>
+                <div tabindex="0" class="accordion-title" role="button"><i class="material-icons">expand_more</i> Climate</div>
                 <div class="accordion-content">
                     <p>
                         Arrakis boasts a harsh and arid desert climate, characterized by scorching temperatures and relentless sandstorms. Visitors should expect extreme heat during the day and cool nights, with temperatures often reaching staggering highs. The planet's vast desert expanses stretch endlessly, offering breathtaking landscapes but also posing challenges for travelers. It's essential to come prepared with adequate protection from the sun and sand, as well as ample hydration. Despite the challenging conditions, Arrakis' unique climate promises an unforgettable adventure for intrepid explorers ready to brave its rugged terrain and discover its hidden wonders.</p>
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-title"><i class="material-icons">expand_more</i> Transportation</div>
+                <div tabindex="0" class="accordion-title" role="button"><i class="material-icons">expand_more</i> Transportation</div>
                 <div class="accordion-content">
                     <p>
                         Transportation on Arrakis is unlike anywhere else in the universe, primarily relying on sandworms and ornithopters to navigate its vast desert expanses. Sandworms, colossal creatures native to the planet, serve as the primary mode of transportation for the Fremen tribes, capable of traversing the dunes with unparalleled speed and agility. For those not accustomed to riding sandworms, ornithopters offer an alternative means of travel, soaring gracefully above the desert landscape. Visitors should prepare for exhilarating journeys across Arrakis' rugged terrain, embracing the thrill of adventure and the beauty of the planet's unique transportation methods.</p>
@@ -90,6 +90,24 @@
                 content.style.display = 'none';
             } else {
                 content.style.display = 'block';
+            }
+        });
+
+        title.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.classList.toggle('active');
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            }
+        });
+        
+        title.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
             }
         });
     });
